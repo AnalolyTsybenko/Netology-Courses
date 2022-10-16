@@ -1,11 +1,11 @@
 import requests
-import config as cg
+from config import TOKEN as tn
 
 
 class YaD:
 
     def __init__(self):
-        self.token = cg.TOKEN
+        self.token = tn.TOKEN
         self.url = 'https://cloud-api.yandex.net/v1/disk/resources/'
         self.headers = {
             'Authorization': f'OAuth {self.token}',
